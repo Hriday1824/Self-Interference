@@ -6,7 +6,7 @@ This repository contains the implementation of self-interference (SI) cancellati
 - **Neural Networks (NN)**
 - **Spline Adaptive Filters (SAF)**
 
-## 📌 Project Overview
+## Project Overview
 
 In full-duplex systems, simultaneous transmission and reception on the same frequency leads to self-interference. The goal is to cancel this strong interference using robust nonlinear adaptive filters.
 
@@ -14,7 +14,7 @@ In full-duplex systems, simultaneous transmission and reception on the same freq
 - Mitigate linear and nonlinear self-interference using advanced filtering methods.
 - Compare performance between neural network and spline-based MVC algorithms.
 
-## 📈 Techniques Implemented
+## Techniques Implemented
 
 ### 1. MVC Adaptive Filter
 - Cancels linear SI using robust outlier-resistant filtering.
@@ -31,26 +31,26 @@ In full-duplex systems, simultaneous transmission and reception on the same freq
 - Learns control points for smooth cancellation.
 - Achieves ~0.66 dB of nonlinear SI cancellation.
 
-## 🔬 Simulation Results
+## Simulation Results
 
 | Method                  | Linear SI Cancellation | Nonlinear SI Cancellation | Distance from Noise Floor |
 |------------------------|------------------------|----------------------------|----------------------------|
 | MVC + Neural Network   | 37.90 dB               | 6.46 dB                    | 3.70 dB                    |
 | MVC + Spline Filter    | 37.89 dB               | 0.66 dB                    | 9.51 dB                    |
 
-## 📁 Files
+## Files
 
 - `mvc.py` – Implementation of basic MVC algorithm.
 - `fullduplexmvc.py` – End-to-end full-duplex SI cancellation.
 - `NNCancellationmvc.py` – MVC with neural network-based SI cancellation.
 - `mvcspline.py` – MVC with spline adaptive filter for nonlinear SI cancellation.
 
-## 🧠 Key Insights
+## Key Insights
 
 - Neural networks show superior non-linear modeling capability due to their deep structure and optimizer-based training.
 - Spline filters are lightweight and smooth but less adaptive to abrupt hardware-induced nonlinearities.
 
-## 📚 References
+## References
 
 1. Guan & Biswal, *Spline adaptive filtering algorithm based on different iterative gradients*, [Journal of Automation and Intelligence, 2023](https://doi.org/10.1016/j.jai.2022.100008)
 2. GeeksforGeeks, *Neural Networks – A Beginner's Guide*, [Link](https://www.geeksforgeeks.org/neural-networks-a-beginners-guide/)
