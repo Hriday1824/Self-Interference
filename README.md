@@ -14,6 +14,10 @@ In full-duplex systems, simultaneous transmission and reception on the same freq
 - Mitigate linear and nonlinear self-interference using advanced filtering methods.
 - Compare performance between neural network and spline-based MVC algorithms.
 
+## Introduction
+
+In-band full duplex (IBFD) communication enables simultaneous transmission and reception on the same frequency, effectively doubling spectral efficiency. However, this leads to a critical challenge—self-interference (SI)—where the transmitted signal leaks into the receiver, often overpowering the desired incoming signal. This project addresses the problem of nonlinear SI cancellation by implementing and analyzing advanced adaptive filtering techniques, including the Maximum Versoria Criterion (MVC) algorithm combined with neural networks and spline adaptive filters.
+
 ## Techniques Implemented
 
 ### 1. MVC Adaptive Filter
